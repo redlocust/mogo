@@ -20,6 +20,7 @@
     padding: 10px;
     margin-left: 35px;
     text-transform: uppercase;
+    transition: color 0.3s;
 
     &--active {
       border-bottom: 3px solid $second-color;
