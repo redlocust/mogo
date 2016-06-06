@@ -1,0 +1,23 @@
+// Normally mainpage styles
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+  min-width: 1200px;
+  font-family: #{$primary-font-family};
+  font-weight: 400;
+}
+
+
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: "";
+}
+
+.clearfix::after {
+  clear: both;
+}

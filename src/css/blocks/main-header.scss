@@ -1,0 +1,23 @@
+.main-header {
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../img/bg-header.jpg");
+  background-size: cover;
+  color: $light-font-color;
+  min-height: 1000px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__logo {
+    padding-top: 30px;
+    font-family: $primary-font-family;
+    font-size: 30px;
+    float: left;
+  }
+
+  &__main-nav {
+    float: right;
+    padding-top: 30px;
+  }
+}
+

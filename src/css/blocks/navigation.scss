@@ -1,0 +1,33 @@
+.navigation {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $primary-font-family;
+    font-size: 14px;
+    font-weight: 400;
+    color: $light-font-color;
+    padding: 10px;
+    margin-left: 35px;
+    text-transform: uppercase;
+
+    &--active {
+      border-bottom: 3px solid $second-color;
+    }
+
+    &:hover {
+      color: $second-color;
+    }
+  }
+}
+
