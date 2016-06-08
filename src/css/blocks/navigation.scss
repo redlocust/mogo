@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 
   &__item {
-    display: inline-block;
-    vertical-align: top;
+    flex: 0 0 auto;
     text-align: center;
-    border-bottom: 3px solid transparent;
+    margin-bottom: 20px;
   }
 
   &__link {
@@ -20,6 +22,8 @@
     padding: 10px;
     margin-left: 35px;
     text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: border 0.3s, color 0.3s;
 
     &--active {
       border-bottom: 3px solid $second-color;
@@ -27,6 +31,7 @@
 
     &:hover {
       color: $second-color;
+      border-bottom: 3px solid $second-color;
     }
   }
 }

@@ -8,16 +8,55 @@
     @include container;
   }
 
+  &__top-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
   &__logo {
     padding-top: 30px;
     font-family: $primary-font-family;
     font-size: 30px;
-    float: left;
+    flex: 0 0 auto;
   }
 
   &__main-nav {
-    float: right;
     padding-top: 30px;
+    flex: 1 0 auto;
   }
-}
 
+  &__title {
+    text-align: center;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 3px;
+      bottom: -40px;
+      left: 50%;
+      transform: translate(-50%,0%);
+      background-color: $light-font-color;
+    }
+  }
+
+  /* Medium screens */
+  @media all and (max-width: 800px) {
+    .main-header__row {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+  }
+
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .main-header__row {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+.slogan {
+  font-family: $second-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  color: $light-font-color;
+
+  &--big {
+    font-size: 72px;
+  }
+}

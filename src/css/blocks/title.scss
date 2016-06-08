@@ -1,0 +1,13 @@
+.title {
+  font-family: $primary-font-family;
+  font-size: 30px;
+  font-weight: 700;
+  color: $light-font-color;
+  margin: 10px;
+  line-height: 0.9;
+  text-transform: uppercase;
+
+  &--big {
+    font-size: 150px;
+  }
+}
