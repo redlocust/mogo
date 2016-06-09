@@ -8,7 +8,7 @@
   justify-content: flex-end;
 
   &__item {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -34,5 +34,24 @@
       border-bottom: 3px solid $second-color;
     }
   }
+
+  @media all and (max-width: 800px) {
+
+    &__link {
+      font-size: 14px;
+    }
+
+    flex-flow: row wrap;
+  }
+
+  @media all and (max-width: 500px) {
+
+    &__link {
+      font-size: 14px;
+    }
+
+    flex-direction:column;
+  }
+
 }
 

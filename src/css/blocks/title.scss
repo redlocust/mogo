@@ -5,9 +5,19 @@
   color: $light-font-color;
   margin: 10px;
   line-height: 0.9;
+  letter-spacing: -0.1em;
   text-transform: uppercase;
 
   &--big {
     font-size: 150px;
   }
+
+  @media all and (max-width: 800px) {
+    font-size: 25px;
+  }
+
+  @media all and (max-width: 500px) {
+    font-size: 20px;
+  }
 }
+

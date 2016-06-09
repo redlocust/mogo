@@ -14,3 +14,22 @@ $light-font-color: #ffffff;
 $primary-font-family: "Montserrat", sans-serif;
 $second-font-family: "Kaushan Script", cursive;
 $third-font-family: "Roboto", sans-serif;
+
+
+// Базовая типографика (<=479: 1 rem = 8px, >=480: 1rem = 10px)
+// Для лёгкого пересчёта: http://pxtoem.com/
+
+$line-height:                 1.375em;
+
+
+// Формы, кнопки
+
+$field-padding-top:           1.0em;
+$field-padding-bottom:        0.75em;
+$field-padding-horizontal:    0.438em;
+
+// Разное
+
+$border-radius:               .3rem;       // универсальный радиус сглаживание углов
+$opacity:                     .7;          // универсальная прозрачность
+$transition-time:             .3s;         // универсально время транзишнов

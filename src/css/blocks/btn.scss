@@ -1,0 +1,10 @@
+.btn {
+  @include btn();
+  color: $light-font-color;
+  padding: 10px 18px ;
+  border-radius: 0;
+  border: solid 3px $light-font-color;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+

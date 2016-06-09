@@ -18,3 +18,46 @@
     }
   }
 }
+
+
+@mixin btn() {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: $field-padding-top $field-padding-horizontal $field-padding-bottom;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1em;
+  line-height: $line-height;
+  text-decoration: none;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  min-height: 2.125em;
+
+&--hover,
+&:hover {
+  text-decoration: none;
+}
+
+&--active,
+&:active,
+&:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+&--disabled,
+&:disabled {
+  cursor: not-allowed;
+  opacity: $opacity;
+  //
+  //a& {
+  //  pointer-events: none;
+  //}
+}
+}

@@ -3,6 +3,7 @@
   background-size: cover;
   color: $light-font-color;
   min-height: 1000px;
+  text-align: center;
 
   &__inner {
     @include container;
@@ -10,7 +11,7 @@
 
   &__top-row {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin-bottom: 150px;
   }
@@ -30,6 +31,7 @@
   &__title {
     text-align: center;
     position: relative;
+    margin: 130px 0;
 
     &:after {
       position: absolute;
@@ -41,13 +43,18 @@
       transform: translate(-50%,0%);
       background-color: $light-font-color;
     }
+
+  }
+
+  &__button {
+    //text-align: center;
   }
 
   /* Medium screens */
   @media all and (max-width: 800px) {
     .main-header__row {
       /* When on medium sized screens, we center it by evenly distributing empty space around items */
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
 
