@@ -23,7 +23,7 @@
     margin-left: 35px;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
-    transition: border 0.3s, color 0.3s;
+    transition: border $transition-time, color $transition-time;
 
     &--active {
       border-bottom: 3px solid $second-color;

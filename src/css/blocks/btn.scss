@@ -6,5 +6,10 @@
   border: solid 3px $light-font-color;
   text-transform: uppercase;
   margin: 0 auto;
+  transition: border $transition-time;
+
+  &:hover {
+    border-color: $second-color;
+  }
 }
 

@@ -4,6 +4,7 @@
   color: $light-font-color;
   min-height: 1000px;
   text-align: center;
+  position: relative;
 
   &__inner {
     @include container;
@@ -17,14 +18,15 @@
   }
 
   &__logo {
-    padding-top: 30px;
+    padding-top: 25px;
     font-family: $primary-font-family;
     font-size: 30px;
+    font-weight: 700;
     flex: 0 0 auto;
   }
 
   &__main-nav {
-    padding-top: 30px;
+    padding-top: 35px;
     flex: 1 0 auto;
   }
 
@@ -48,6 +50,15 @@
 
   &__button {
     //text-align: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 40px;
+    position: relative;
+    width: 20px;
+    height: 20px;
   }
 
   /* Medium screens */

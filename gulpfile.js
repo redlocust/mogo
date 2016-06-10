@@ -30,6 +30,7 @@ var path = {
     html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
     js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
     style: 'src/css/main.scss',
+    sprite: 'src/css/blocks/',
     img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
     font: 'src/font/**/*.*'
   },
@@ -58,19 +59,19 @@ gulp.task('sprite', function () {
   // Generate our spritesheet
   var spriteData = gulp.src('src/img/sprite/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: 'sprite.css'
+    cssName: 'sprite.scss'
   }));
 
   //// Pipe image stream through image optimizer and onto disk
   var imgStream = spriteData.img
   //  // DEV: We must buffer our stream into a Buffer for `imagemin`
   //  .pipe(imagemin())
-    .pipe(gulp.dest(path.build.img));
+    .pipe(gulp.dest(path.src.img));
   //
   //// Pipe CSS stream through CSS optimizer and onto disk
-  //var cssStream = spriteData.css
-  //  .pipe(cssmin())
-  //  .pipe(gulp.dest(path.build.css));
+  var cssStream = spriteData.css
+    //.pipe(cssmin())
+    .pipe(gulp.dest(path.src.sprite));
   //
   //// Return a merged stream to handle both `end` events
   //return merge(imgStream, cssStream);
