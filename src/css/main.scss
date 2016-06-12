@@ -8,6 +8,7 @@
 */
 
 @import "mixins/mixins";
+@import "blocks/sprite";
 
 
 @import "global/global-variables";
@@ -20,4 +21,4 @@
 @import "blocks/title";
 @import "blocks/btn";
 @import "blocks/icon-fonts";
-@import "sprite";
+@import "blocks/icon";

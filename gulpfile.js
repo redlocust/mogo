@@ -59,19 +59,20 @@ gulp.task('sprite', function () {
   // Generate our spritesheet
   var spriteData = gulp.src('src/img/sprite/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: 'sprite.scss'
+    cssName: 'sprite.scss',
+    imgPath: '../img/sprite/sprite.png'
   }));
 
   //// Pipe image stream through image optimizer and onto disk
   var imgStream = spriteData.img
   //  // DEV: We must buffer our stream into a Buffer for `imagemin`
   //  .pipe(imagemin())
-    .pipe(gulp.dest(path.src.img));
+    .pipe(gulp.dest('build/img/sprite/'));
   //
   //// Pipe CSS stream through CSS optimizer and onto disk
   var cssStream = spriteData.css
     //.pipe(cssmin())
-    .pipe(gulp.dest(path.src.sprite));
+    .pipe(gulp.dest('src/css/blocks/'));
   //
   //// Return a merged stream to handle both `end` events
   //return merge(imgStream, cssStream);

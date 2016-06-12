@@ -1,0 +1,11 @@
+.icon {
+  display: inline-block;
+
+  &--shopping-cart {
+    @include sprite($shopping-cart);
+  }
+
+  &--magnifining-glass {
+    @include sprite($magnifining-glass);
+  }
+}
