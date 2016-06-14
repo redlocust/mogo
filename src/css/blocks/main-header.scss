@@ -50,6 +50,7 @@
 
   &__button {
     //text-align: center;
+    margin-bottom: 154px;
   }
 
   &__icon {
@@ -57,6 +58,8 @@
     margin-top: 35px;
     margin-left: 40px;
   }
+
+
 
   /* Medium screens */
   @media all and (max-width: 800px) {
