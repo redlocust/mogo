@@ -3,8 +3,17 @@
   font-size: 24px;
   font-weight: 400;
   color: $light-font-color;
+  text-align: center;
 
   &--big {
     font-size: 72px;
+  }
+
+  &--light-color {
+    color: $light-font-color;
+  }
+
+  &--dark-color {
+    color: $font-color;
   }
 }

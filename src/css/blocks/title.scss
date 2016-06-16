@@ -2,14 +2,22 @@
   font-family: $primary-font-family;
   font-size: 30px;
   font-weight: 700;
-  color: $light-font-color;
   margin: 10px;
+  color: $light-font-color;
   line-height: 0.9;
-  letter-spacing: -0.1em;
   text-transform: uppercase;
+  text-align: center;
 
   &--big {
     font-size: 150px;
+  }
+
+  &--light-color {
+    color: $light-font-color;
+  }
+
+  &--dark-color {
+    color: $font-color;
   }
 
   @media all and (max-width: 800px) {
