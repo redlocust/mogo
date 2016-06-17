@@ -1,11 +1,24 @@
 .icon {
   display: inline-block;
 
+
   &--shopping-cart {
     @include sprite($shopping-cart);
+
+    &:hover {
+      opacity: $opacity;
+    }
   }
 
   &--magnifining-glass {
     @include sprite($magnifining-glass);
+
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+
+  &--users {
+    @include sprite($users);
   }
 }
