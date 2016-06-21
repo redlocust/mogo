@@ -21,4 +21,8 @@
   &--users {
     @include sprite($users);
   }
+
+  &--alarm {
+    @include sprite($alarm);
+  }
 }
