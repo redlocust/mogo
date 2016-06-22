@@ -2,6 +2,7 @@
   background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../img/bg-header.jpg");
   background-size: cover;
   background-attachment: fixed;
+  //background-position: center;
   color: $light-font-color;
   min-height: 1000px;
   text-align: center;
@@ -23,6 +24,7 @@
     font-family: $primary-font-family;
     font-size: 30px;
     font-weight: 700;
+    line-height: $line-height;
     flex: 0 0 auto;
   }
 
