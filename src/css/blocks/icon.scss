@@ -25,4 +25,24 @@
   &--alarm {
     @include sprite($alarm);
   }
+
+  &--line-graph {
+    @include sprite($line-graph);
+  }
+
+  &--computer-ok {
+    @include sprite($computer-ok);
+  }
+
+  &--book {
+    @include sprite($book);
+  }
+
+  &--home {
+    @include sprite($home);
+  }
+
+  &--image {
+    @include sprite($image);
+  }
 }

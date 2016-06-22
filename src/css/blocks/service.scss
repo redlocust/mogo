@@ -1,5 +1,4 @@
 .service {
-
   &__inner {
     @include container();
   }
@@ -25,7 +24,7 @@
     font-size: 0;
     border-bottom: solid #e5e5e5 1px;
 
-    :nth-child(odd) {
+    &:nth-child(odd) {
       border-bottom: solid transparent 1px;
     }
   }
@@ -56,6 +55,7 @@
     font-size: 14px;
     font-weight: 400;
     color: $font-color;
+    text-transform: uppercase;
   }
 
   &__item-text {

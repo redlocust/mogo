@@ -1,0 +1,39 @@
+.feature {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/bg-feature.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 850px;
+  position: relative;
+
+  &__phone {
+    position: absolute;
+    bottom: -95px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__inner {
+    @include container();
+  }
+
+  &__title {
+    padding-top: 110px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 3px;
+      bottom: -40px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      background-color: $primary-color;
+    }
+  }
+}

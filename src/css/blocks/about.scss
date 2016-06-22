@@ -21,9 +21,19 @@
     }
   }
 
+  &__text {
+    text-align: center;
+    margin: 0 130px;
+    font-family: $third-font-family;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $third-font-color;
+  }
+
   &__images-list {
     font-size: 0;
-    margin-bottom: 110px;
+    margin: 110px 0;
   }
 
   &__image {
