@@ -21,14 +21,46 @@
   }
 
   &__text {
-    text-align: center;
-    margin: 0 130px;
-    font-family: $third-font-family;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    color: $third-font-color;
+     text-align: center;
+     margin: 0 130px;
+    margin-bottom: 95px;
+     font-family: $third-font-family;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 25px;
+     color: $third-font-color;
+   }
+
+  &__image {
+    float:left;
+    width: 570px;
+    height: 380px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
 
+
+
+}
+
+.accordion {
+  > li > a {
+    font-weight: normal;
+  }
+
+  ul.submenu {
+    display: none;
+  }
+
+  .is-expanded {
+    > a {
+      color: red;
+    }
+
+    display: block;
+  }
 }
