@@ -45,4 +45,8 @@
   &--image {
     @include sprite($image);
   }
+
+  &--picture {
+    @include sprite($picture);
+  }
 }

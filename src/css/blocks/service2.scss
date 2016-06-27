@@ -21,19 +21,19 @@
   }
 
   &__text {
-     text-align: center;
-     margin: 0 130px;
+    text-align: center;
+    margin: 0 130px;
     margin-bottom: 95px;
-     font-family: $third-font-family;
-     font-weight: 400;
-     font-size: 15px;
-     line-height: 25px;
-     color: $third-font-color;
-   }
+    font-family: $third-font-family;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $third-font-color;
+  }
 
   &__image {
-    float:left;
-    width: 570px;
+    float: left;
+    width: 571px;
     height: 380px;
 
     img {
@@ -43,24 +43,17 @@
   }
 
 
+  &__accordion {
 
-
-}
-
-.accordion {
-  > li > a {
-    font-weight: normal;
+    @include accordion();
+    float: right;
+    width: 50%;
   }
 
-  ul.submenu {
-    display: none;
+  &__icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
   }
 
-  .is-expanded {
-    > a {
-      color: red;
-    }
-
-    display: block;
-  }
 }
