@@ -48,12 +48,19 @@
     @include accordion();
     float: right;
     width: 50%;
+    max-height: 380px;
   }
 
   &__icon {
     position: absolute;
     top: 15px;
     left: 15px;
+  }
+
+  &__arrow-icon {
+    position: absolute;
+    top: 25px;
+    right: 15px;
   }
 
 }

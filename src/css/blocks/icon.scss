@@ -49,4 +49,21 @@
   &--picture {
     @include sprite($picture);
   }
+
+  &--equalizer {
+    @include sprite($equalizer);
+  }
+
+  &--bullseye {
+    @include sprite($bullseye);
+  }
+
+  &--arrow-down {
+    @include sprite($arrow-down);
+  }
+
+  &--arrow-up {
+    @include sprite($arrow-up);
+  }
+
 }
