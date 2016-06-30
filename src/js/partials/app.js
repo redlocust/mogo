@@ -5,6 +5,10 @@ $(function () {
   $('.submenu').perfectScrollbar();
 
 
+  $('.quote__slider').slick({
+    //setting-name: setting-value
+});
+
   //roll numbers
   $('.counter').counterUp({
     delay: 100,
@@ -23,6 +27,14 @@ $(function () {
     jQuery(this).parent().siblings().removeClass('is-expanded');
     jQuery(this).parent().find('.submenu').slideToggle('600');
     jQuery(this).parent().toggleClass('is-expanded');
+
+    if ($(this).parent().find('.service2__arrow-icon').hasClass('icon--arrow-up')) {
+      $(this).parent().find('.service2__arrow-icon').removeClass('icon--arrow-up').addClass('icon--arrow-down');
+    } else {
+      $(this).parent().find('.service2__arrow-icon').removeClass('icon--arrow-down').addClass('icon--arrow-up');
+      $(this).parent().siblings().find('.service2__arrow-icon').removeClass('icon--arrow-up').addClass('icon--arrow-down');
+    }
+
     e.preventDefault();
   });
 });

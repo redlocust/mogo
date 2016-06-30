@@ -1,0 +1,40 @@
+.quote {
+  background-color: #f8f8f8;
+  min-height: 290px;
+
+  &__inner {
+    @include container();
+  }
+
+  &__slider {
+    padding: 70px 110px;
+    //padding-left: 280px;
+  }
+
+  &__slide {
+    //padding-left: 0px;
+    position: relative;
+  }
+
+  &__slide-text {
+    font-family: $third-font-family;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+    color:$third-font-color;
+  }
+
+  &__icon {
+    position: absolute;
+    content: "";
+    left: 40px;
+    width: 145px;
+    height: 145px;
+    top: 50%;
+    transform: translate(0,-50%);
+    border: 3px solid $forth-color;
+    z-index: 1000;
+  }
+
+}
