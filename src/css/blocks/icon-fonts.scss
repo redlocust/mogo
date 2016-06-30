@@ -10,6 +10,7 @@
   font-style: normal;
 }
 
+
 .icon-fonts {
   font-family: entypo;
   color: $light-font-color;
@@ -38,6 +39,22 @@
 
   &--search:before {
     content: '\e801';
+  }
+
+  &--facebook:before {
+    content: '\e802';
+  }
+
+  &--twitter:before {
+    content: '\e803';
+  }
+
+  &--pinterest:before {
+    content: '\e804';
+  }
+
+  &--instagram-1:before {
+    content: '\e806';
   }
 
 }
