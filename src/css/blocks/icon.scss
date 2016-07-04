@@ -1,5 +1,6 @@
 .icon {
   display: inline-block;
+  text-align: center;
 
 
   &--shopping-cart {
@@ -72,6 +73,10 @@
     left: 50%;
     transform: translate(-50%,-50%);
     @include sprite($speech);
+  }
+
+  &--picture-white {
+    @include sprite($picture-white);
   }
 
 }
