@@ -7,7 +7,11 @@ $(function () {
 
   $('.quote__slider').slick({
     //setting-name: setting-value
-});
+  });
+
+  $('.testimonial__slider').slick({
+    //setting-name: setting-value
+  });
 
   //roll numbers
   $('.counter').counterUp({
@@ -15,12 +19,12 @@ $(function () {
     time: 3000
   });
 
-  $('#waypoint').waypoint(function () {
-    $('').addClass('animated').addClass('bounce').addClass('infinite');
-  }, {
-    triggerOnce: true,
-    offset: '90%'
-  });
+  //$('#waypoint').waypoint(function () {
+  //  $('').addClass('animated').addClass('bounce').addClass('infinite');
+  //}, {
+  //  triggerOnce: true,
+  //  offset: '90%'
+  //});
 
   $('.js-accordion-trigger').bind('click', function (e) {
     jQuery(this).parent().siblings().find('.submenu').slideUp('600');

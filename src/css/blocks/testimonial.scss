@@ -1,0 +1,68 @@
+.testimonial {
+  background-color: #fff;
+  min-height: 220px;
+
+  &__inner {
+    @include container();
+  }
+
+  &__slider {
+    padding: 70px 110px;
+    //padding-left: 280px;
+  }
+
+  &__slide {
+    //padding-left: 0px;
+    position: relative;
+    min-height: 220px;
+  }
+
+  &__slide-text {
+    font-family: $third-font-family;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+    color:$third-font-color;
+    display: inline-block;
+    vertical-align: top;
+    padding: 40px 0;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  &__icon {
+    position: absolute;
+    content: "";
+    left: 40px;
+    width: 210px;
+    height: 210px;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &__author {
+    position: relative;
+    padding-left: 70px;
+    font-family: $second-font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: $line-height;
+    color:$font-color;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 3px;
+      background-color: $primary-color;
+      top: 50%;
+      left: -10px;
+    }
+  }
+
+}
