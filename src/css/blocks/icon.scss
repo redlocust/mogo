@@ -79,4 +79,12 @@
     @include sprite($picture-white);
   }
 
+  &--view {
+    @include sprite($view);
+  }
+
+  &--speech-2 {
+    @include sprite($speech-2);
+  }
+
 }
