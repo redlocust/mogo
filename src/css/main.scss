@@ -16,6 +16,8 @@
 
 @import "mixins/mixins";
 @import "library/accordion";
+@import "library/map";
+@import "library/search-bar";
 
 @import "blocks/sprite";
 @import "blocks/menu";
@@ -43,3 +45,5 @@
 @import "blocks/testimonial";
 @import "blocks/saying";
 @import "blocks/blog";
+@import "blocks/map";
+@import "blocks/footer";

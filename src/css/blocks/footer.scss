@@ -1,0 +1,17 @@
+.footer {
+
+    padding-top: 77px;
+
+  &__inner {
+    @include container();
+  }
+
+  &__column {
+    @include span-columns(4);
+  }
+
+
+  &__search-bar {
+    @include search-bar();
+  }
+}

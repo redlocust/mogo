@@ -7,8 +7,8 @@
 //= ../../bower_components/jquery.counterup/jquery.counterup.js
 //= ../../bower_components/slick-carousel/slick/slick.js
 
-
 /*
  * Custom
  */
 //= partials/app.js
+//= partials/map.js

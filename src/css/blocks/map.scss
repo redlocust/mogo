@@ -1,0 +1,7 @@
+.map {
+
+  max-height: 200px;
+  margin-top: 100px;
+  @include map();
+
+}
