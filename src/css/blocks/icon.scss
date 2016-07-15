@@ -87,4 +87,36 @@
     @include sprite($speech-2);
   }
 
+  &--soc-facebook {
+    @include sprite($soc-facebook);
+  }
+
+  &--soc-twitter {
+    @include sprite($soc-twitter);
+  }
+
+  &--soc-instagram {
+    @include sprite($soc-instagram);
+  }
+
+  &--soc-pinterest {
+    @include sprite($soc-pinterest);
+  }
+
+  &--soc-google-plus {
+    @include sprite($soc-google-plus);
+  }
+
+  &--soc-youtube {
+    @include sprite($soc-youtube);
+  }
+
+  &--soc-dribbble {
+    @include sprite($soc-dribbble);
+  }
+
+  &--soc-tumblr {
+    @include sprite($soc-tumblr);
+  }
+
 }

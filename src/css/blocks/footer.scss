@@ -1,17 +1,68 @@
 .footer {
 
+    @include search-bar();
+
     padding-top: 77px;
+    background-color: #f8f8f8;
 
   &__inner {
     @include container();
+    @include outer-container;
+    max-width: 1200px;
   }
 
   &__column {
     @include span-columns(4);
   }
 
+  &__logo {
+    font-size: 46px;
+    font-weight: bold;
+    font-family: $primary-font-family;
+    color: #cccccc;
+    margin-bottom: 35px;
+    line-height: $line-height;
+  }
 
-  &__search-bar {
-    @include search-bar();
+  &__about {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: $third-font-family;
+    color: $third-font-color;
+    line-height: $line-height;
+    margin-bottom: 45px;
+  }
+
+  &__folowers {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $primary-font-family;
+    color: $font-color;
+    padding-bottom: 18px;
+    line-height: $line-height;
+    border-bottom: 1px solid $gray-color;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &__socials {
+
+    a {
+      padding-left: 16px;
+    }
+  }
+
+  &__socials-text {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: $third-font-family;
+    color: $third-font-color;
+    font-style: italic;
+    line-height: $line-height;
+    margin-bottom: 40px;
   }
 }

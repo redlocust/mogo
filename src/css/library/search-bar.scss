@@ -1,14 +1,14 @@
-@mixin search-bar {
+@mixin search-bar() {
   form.search-bar {
     ///////////////////////////////////////////////////////////////////////////////////
     $base-spacing: 1.5em !default;
-    $base-border-color: gainsboro !default;
+    $base-border-color: #e7e7e7 !default;
     $base-line-height: 1.5em !default;
     //////////////////////////////////////////////////////////////////////////////////
 
-    $search-bar-border-color: $base-border-color;
+    $search-bar-border-color: #e7e7e7;
     $search-bar-border: 1px solid $search-bar-border-color;
-    $search-bar-background: lighten($search-bar-border-color, 10%);
+    $search-bar-background: #fff;
 
     position: relative;
 
@@ -18,19 +18,30 @@
       border: 1px solid $base-border-color;
       box-sizing: border-box;
       display: block;
-      font-size: 1em;
+      font-size: 15px;
       font-style: italic;
       margin: 0;
-      padding: ($base-spacing / 3) ($base-spacing / 3);
+      padding: 10px 15px;
       position: relative;
       transition: border-color;
-      width: 100%;
+      width: 230px;
+      color: $third-font-color;
+      font-family: $third-font-family;
     }
 
     button[type=submit] {
-      @include position(absolute, 0 0 0 null);
+      width: 150px;
       outline: none;
-      padding: 5px 10px;
+      border: none;
+      color: #fff;
+      background-color: $forth-color;
+      padding: 10px 5px;
+      position: absolute;
+      right: 14px;
+      top: 0;
+      font-family: $primary-font-family;
+      font-weight: 700;
+      text-transform: uppercase;
 
       img {
         height: 12px;
