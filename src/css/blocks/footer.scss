@@ -65,4 +65,13 @@
     line-height: $line-height;
     margin-bottom: 40px;
   }
+
+  &__title {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 14px;
+    color: $font-color;
+    line-height: $line-height;
+    text-transform: uppercase;
+  }
 }
