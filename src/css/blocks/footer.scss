@@ -4,6 +4,7 @@
 
     padding-top: 77px;
     background-color: #f8f8f8;
+    padding-bottom: 50px;
 
   &__inner {
     @include container();
@@ -12,7 +13,21 @@
   }
 
   &__column {
-    @include span-columns(4);
+    float: left;
+
+    &:nth-child(1) {
+      width: 460px;
+      margin-right: 45px;
+    }
+
+    &:nth-child(2) {
+      width: 340px;
+      margin-right: 40px;
+    }
+
+    &:nth-child(3) {
+      width: 270px;
+    }
   }
 
   &__logo {
@@ -55,10 +70,45 @@
     }
   }
 
+  &__blog-item {
+    text-decoration: none;
+    color: $font-color;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+
+  &__blog-pict {
+    float: left;
+    margin-right: 20px;
+  }
+
+  &__blog-content {
+    padding-top: 10px;
+  }
+
+  &__blog-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__blog-date {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: $third-font-family;
+    color: $third-font-color;
+    font-style: italic;
+    line-height: $line-height;
+  }
+
+
   &__socials-text {
     display: inline-block;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     font-family: $third-font-family;
     color: $third-font-color;
     font-style: italic;
@@ -74,4 +124,30 @@
     line-height: $line-height;
     text-transform: uppercase;
   }
+
+  &__instagram-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+  }
+
+  &__instagram-image {
+    flex-grow: 1;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px;
+  }
+
+  &__instagram-link {
+    text-decoration:  none;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: $third-font-family;
+    color: $third-font-color;
+    font-style: italic;
+    line-height: $line-height;
+  }
+
 }
