@@ -26,6 +26,20 @@ $(function () {
   //  offset: '90%'
   //});
 
+  $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+    e.preventDefault();
+
+    var target = this.hash,
+      $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 1000, 'swing', function () {
+      window.location.hash = target;
+    });
+  });
+
+
   $('.js-accordion-trigger').bind('click', function (e) {
     jQuery(this).parent().siblings().find('.submenu').slideUp('600');
     jQuery(this).parent().siblings().removeClass('is-expanded');
